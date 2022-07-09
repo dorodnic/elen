@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(144, 175, 214) !important;
+    margin: 0px !important;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(9, 24, 36)
+}
+
+.my-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+@media only screen and (min-width: 768px) {
+    .my-container {
+        width: min(85vw, 1000px);
+    }
+}
+
+.toplevel {
+    display: grid;
+    grid-template-rows: auto 100%;
+}
+
+
+.header {
+    background: url("2.jpg") no-repeat center center;
+    background-size: auto auto;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr auto;
+    height: 35vh;
+}
+
+.portrait {
+    height: 35vh;
+    max-width: 40vw;
+    object-fit: cover;
+    padding-top: auto;
+    padding-bottom: 0px;
+}
+
+.title {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.time {
+    display:inline;
+    font-weight: bold;
+    color: steelblue;
+}
+
+.calltoaction {
+    background-color:antiquewhite;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1 {
+    display: inline;
+    font-weight: bold;
+    color: rgb(22, 56, 83);
+    font-size: min(4vw, 18px);
+}
+
+.title-banner {
+    background-color: rgba(240, 248, 255, 0.63);
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-weight: bold;
+    color: rgb(22, 56, 83);
+    align-items: center;
+    gap: 1em;
+    border-radius: 10px;
+    font-size: min(4vw, 18px);
+}
+
+.title-holder {
+    background-color: rgba(240, 248, 255, 0.651);
+    width: 100%;
+    padding: 1em 10px;
+}
+
+.details {
+    background-color: rgb(240, 243, 245);
+    height: 100%;
+    padding: 10px
+}
+
+a:link {
+    color: rgb(26, 78, 121);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(26, 78, 121);
+    text-decoration: none;
+}
+
+a:hover {
+    color: steelblue;
+    text-decoration: none;
+}
+
+a:active {
+    color: steelblue;
+    text-decoration: none;
+}
