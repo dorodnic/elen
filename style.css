@@ -32,7 +32,7 @@ html {
 
 .header {
     background: url("2.jpg") no-repeat center center;
-    background-size: auto auto;
+    background-size: 150% auto;
 
     display: grid;
     grid-template-columns: 1fr auto;
@@ -46,6 +46,10 @@ html {
     object-fit: cover;
     padding-top: auto;
     padding-bottom: 0px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 .title {
@@ -74,8 +78,8 @@ h1 {
 
 .title-banner {
     background-color: rgba(240, 248, 255, 0.63);
-    width: 100%;
-    padding: 1em;
+    width: auto;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -89,15 +93,25 @@ h1 {
 
 .title-holder {
     background-color: rgba(240, 248, 255, 0.651);
-    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
     padding: 1em 10px;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    display: grid;
+    grid-template-columns: 1fr 35%;
 }
 
 .details {
     background-color: rgb(240, 243, 245);
     height: 100%;
-    padding: 10px
+    padding: 10px;
+    overflow-y: scroll;
 }
+
+a { white-space: nowrap; }
 
 a:link {
     color: rgb(26, 78, 121);
